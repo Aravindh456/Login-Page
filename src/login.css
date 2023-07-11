@@ -1,0 +1,144 @@
+/* slider side CSS */
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url(./login-bg.png);
+}
+a {
+  text-decoration: none;
+}
+.slider-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.slider-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.login-screen-image {
+  max-width: 320px;
+}
+.logo-para {
+    max-width: 570px;
+    margin: auto;
+}
+/* Form CSS */
+
+.form-head{
+    text-align: left;
+    width: 80%;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  padding: 20px 20px;
+}
+.form-logo-img {
+  width: 150px;
+}
+
+.form-logo-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* padding: 20px 20px; */
+}
+form {
+  width: 80%;
+}
+.error-message {
+    font-size: 16px;
+    /* margin-top: 3px; */
+  }
+  
+.input {
+  border: 1px solid #e9ecef;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  /* padding-left: 10px; */
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.checkbox {
+  margin-bottom: 15px;
+}
+.check {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.form-btn {
+  margin-top: 20px;
+  width: 103%;
+  height: 40px;
+  border: 1px solid #e9ecef;
+  border-radius: 5px;
+  background-color: #ff6575;
+  color: #fff;
+}
+.form-btn:hover {
+  background-color: #e72f41;
+  color: #e9ecef;
+}
+
+@media only screen and (min-width: 767px) and (max-width: 2560px) {
+  .slider-container {
+    display: block;
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 767px) and (max-width: 2560px) {
+  .main-container {
+    flex-wrap: nowrap;
+  }
+}
+@media only screen and (min-width: 767px) and (max-width: 2560px) {
+  .form-container {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 767px) and (max-width: 2560px) {
+  .form-btn {
+    width: 101%;
+  }
+}
+@media only screen and (min-width: 767px) and (max-width: 2560px) {
+  .check {
+    flex-direction: row;
+  }
+}
+@media only screen and (min-width: 767px) and (max-width: 2560px) {
+  .form-logo-content {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
