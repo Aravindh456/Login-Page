@@ -1,7 +1,7 @@
 /* slider side CSS */
 .slider-container {
   width: 100%;
-  height: 400px; /* Adjust the height as needed */
+  height: 400px;
   overflow: hidden;
   position: relative;
 }
@@ -16,7 +16,6 @@
 }
 
 .logo-img-content {
-  
   padding: 20px;
 }
 
@@ -25,37 +24,48 @@
   font-weight: 500;
 }
 
-.logo-img-content p {
+/* .logo-img-content p {
   color: #000;
-}
-
+} */
 .slider-dots {
   position: absolute;
   bottom: 20%;
   left: 50%;
   transform: translateX(-50%);
 }
+.forgot-slider-dots {
+  position: absolute;
+  bottom: 38%;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
 .slider-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #888;
+  width: 15px;
+  height: 15px;
+  border-radius: 30px;
+  background-color: #FF6575;
   margin: 0 5px;
   display: inline-block;
   cursor: pointer;
   transition: width 0.3s ease;
 }
 
+/* .slide:active {
+  opacity: 0;
+  animation: slide 10s infinite;
+} */
+
 .slider-dot.active {
   background-color: #002058;
 }
 .slider-dot:hover {
   width: 60px;
-  height: 10px; /* Adjust the expanded width as needed */
+  height: 15px;
+  background-color: #FFB54A;
 }
 
-/* Add animation for slide transition */
+
 .slide {
   opacity: 0;
   transform: translateX(-100%);
@@ -109,7 +119,24 @@ label{
   align-items: center;
   display: none;
 }
-
+.error-message{
+  display: flex;
+  color: #e72f41;
+}
+.success-message{
+  position: absolute;
+  top: 10%;
+  background: green;
+  color: #fff;  
+  padding: 10px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  /* margin: auto; */
+  left: 67%;
+  border-radius: 5px;
+}
 .slider-content {
   display: flex;
  
@@ -215,6 +242,16 @@ form {
   background-color: #e72f41;
   color: #e9ecef;
 }
+.form-btn.disabled {
+  background-color: lightgray;
+  /* cursor: not-allowed; */
+  margin-top: 20px;
+  width: 103%;
+  height: 40px;
+  border: 1px solid #e9ecef;
+  border-radius: 5px;
+  color: #fff;
+}
 
 @media only screen and (min-width: 767px) and (max-width: 2560px) {
   .slider-container {
@@ -237,6 +274,10 @@ form {
   .form-btn {
     width: 101%;
   }
+  .form-btn.disabled {
+    width: 101%;
+  }
+
 }
 @media only screen and (min-width: 767px) and (max-width: 2560px) {
   .check {
@@ -252,3 +293,19 @@ form {
     justify-content: space-between;
   }
 }
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+.success-message {
+  top: 2%;
+  width: 63%;
+  left: 6%;
+}
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+  .success-message {
+    top: 6%;
+    width: 34%;
+    left: 52%;
+  }
+  }
