@@ -37,7 +37,6 @@ const LoginPage = () => {
     } else if (!validator.isEmail(email)) {
       setEmailError("Please enter a valid email address");
       hasError = true;
-      console.log(email.value);
     }
 
     if (!password) {
